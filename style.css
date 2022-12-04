@@ -1,0 +1,58 @@
+/* Root variables */
+
+:root{
+    /* font variables */
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    /* color variables */
+    --clr-prm-dk-cyan: hsl(185, 75%, 39%);
+    --clr-prm-vd-de-blue: hsl(229, 23%, 23%);
+    --clr-prm-dk-gr-blue: hsl(227, 10%, 46%);
+    
+    --clr-act-dk-gray: hsl(0, 0%, 59%);
+}
+
+/* Resets based on Josh Comeau's Modern CSS Reset: https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* General styling */
+
+body {
+    background-image: url(/images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: top, bottom;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-color: var(--clr-prm-dk-cyan);
+    display: grid;
+    place-content: center;
+}
+
+main {
+    background-image: url(images/bg-pattern-card.svg);
+    
+}
