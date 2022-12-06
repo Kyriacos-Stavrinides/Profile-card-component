@@ -62,7 +62,7 @@ body {
 main {
     background-image: url(images/bg-pattern-card.svg);
     background-color: white;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
     width: 18rem;
     border-radius: 1rem;
 }
