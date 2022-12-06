@@ -40,13 +40,20 @@ img, svg {
     max-width: 100%;
 }
 
+/* Utility classes */
+
+.lt-text {
+    color: var(--clr-prm-dk-gr-blue);
+    font-weight: var(--fw-regular);
+}
+
 /* General styling */
 
 body {
     background-image: url(/images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-    background-position: top, bottom;
-    /* background-repeat: no-repeat; */
-    background-size: cover;
+    background-position: top -10rem left -20rem, bottom -10rem right -20rem;
+    background-repeat: no-repeat;
+    background-size: 30rem;
     background-color: var(--clr-prm-dk-cyan);
     display: grid;
     place-content: center;
@@ -54,5 +61,65 @@ body {
 
 main {
     background-image: url(images/bg-pattern-card.svg);
+    background-color: white;
+    background-repeat: no-repeat;
+    width: 18rem;
+    border-radius: 1rem;
+}
+
+
+/* layout styling */
+
+.profile {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 4fr 1fr;
+    font-weight: var(--fw-bold);
+}
+
+.profile .profile__info {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: row;
+    place-content: center;
     
+    text-align: center;
+    /* aspect-ratio: 1 / 1; */
+    padding-top: 4.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.profile .profile__info .profile__img {
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: auto;
+    width: 6rem;
+}
+
+.profile .profile__info .profile__text-section> h1 {
+    font-size: 1.1rem;
+}
+
+.profile .profile__info .profile__text-section> p {
+    font-size: 0.8rem;
+}
+
+.profile .profile__social {
+    border-top: 1px outset var(--clr-act-dk-gray);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 1rem;
+}
+
+.profile .profile__social> p {
+    text-align: center;
+    max-width: 4rem;
+    line-height: 1.1;
+}
+
+.profile .profile__social span {
+    font-size: 0.7rem;
 }
